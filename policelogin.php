@@ -20,7 +20,9 @@ if(isset($_POST['s']))
     mysqli_select_db("crime_portal",$conn);
     
     if($_SERVER["REQUEST_METHOD"]=="POST")
+	    
     {
+//6.1---------police must be able to enter the name ,id,typeof  complaint,location ,password
         $name=$_POST['email'];
         $pass=$_POST['password'];
         $result=mysqli_query($conn,"SELECT p_id,p_pass FROM police where p_id='$name' and p_pass='$pass' ");
