@@ -13,14 +13,22 @@ if(isset($_POST['s']))
     {
         die("could not connect".mysqli_error());
     }
+	
+//1.2------------DB function to insert data into MySQL DB
     mysqli_select_db("crime_portal",$conn);
     
     if($_SERVER["REQUEST_METHOD"]=="POST")
+	    
+	    
+//1.1 register for new user
     {
         $name=$_POST['email'];
         $pass=$_POST['password'];
         $u_id=$_POST['email'];
         $_SESSION['u_id']=$u_id;
+	    
+	 
+// 1.3------------connect to different pages (user login,official login,home)    
         $result=mysqli_query($conn,"SELECT u_id,u_pass FROM user where u_id='$name' and u_pass='$pass' ");
        
           
