@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
+
 	<title>Official Login</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -19,10 +21,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+	    
+//4.1---------link to the police login page
+	    
       <a class="navbar-brand" href="home.php"><b>Crime Portal</b></a>
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
+	      
+
         <li class="active"><a href="official_login.php">Official Login</a></li>
       </ul>
     </div>
@@ -38,6 +45,8 @@
                     <div class="caption">
                         <h3>Police Login</h3>
                         <p>
+				
+//4.1---------link to the police login page
                             <a href="policelogin.php" class="btn btn-primary">Police Login</a>
                         </p>
                     </div>
@@ -49,6 +58,8 @@
                     <div class="caption">
                         <h3>Incharge Login</h3>
                         <p>
+				
+//4.2---------link to the incharge login page,
                             <a href="inchargelogin.php" class="btn btn-primary">Incharge Login</a>
                         </p>
                     </div>
@@ -60,6 +71,8 @@
                     <div class="caption">
                         <h3>HQ Login</h3>
                         <p>
+				
+//4.3--------link to headquarter login page
                             <a href="headlogin.php" class="btn btn-primary">HQ Login</a>
                         </p>
                     </div>
