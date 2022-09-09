@@ -89,6 +89,8 @@ session_start();
         <li class="active"><a href="headHome.php">HQ Home</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+	      
+//5.1--------search for the complaint id
         <li class="active" ><a href="headHome.php">View Complaints</a></li>
         <li ><a href="head_view_police_station.php">Police Station</a></li>
         <li><a href="h_logout.php">Logout &nbsp <i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
@@ -109,6 +111,7 @@ session_start();
      <select name="loc" class="form-control" style="width: 250px;">
          
 						<?php
+//5.2able to match the complaint details from the MySQL DB
                         $loc=mysqli_query("select location from police_station");
                         while($row=mysqli_fetch_array($loc))
                         {
